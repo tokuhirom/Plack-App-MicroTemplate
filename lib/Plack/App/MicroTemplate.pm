@@ -50,7 +50,7 @@ sub find_template {
 
 sub _exists {
     my ($self, $fname) = @_;
-    for my $dir (@{$self->mt->{include_path}}) {
+    for my $dir (@{$self->mt->include_path}) {
         return 1 if -f "$dir/$fname";
     }
     return 0;
