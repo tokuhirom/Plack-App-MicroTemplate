@@ -2,7 +2,8 @@ use inc::Module::Install;
 name 'Plack-App-MicroTemplate';
 all_from 'lib/Plack/App/MicroTemplate.pm';
 
-# requires '';
+requires 'Text::MicroTemplate' => 0.18;
+requires 'Plack' => '0.99';
 
 
 readme_markdown_from 'lib/Plack/App/MicroTemplate.pm';
