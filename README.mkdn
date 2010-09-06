@@ -4,7 +4,11 @@ Plack::App::MicroTemplate -
 
 # SYNOPSIS
 
-  use Plack::App::MicroTemplate;
+    use Plack::App::MicroTemplate;
+
+    Plack::App::MicroTemplate->new(
+        include_path => ['.'],
+    );
 
 # DESCRIPTION
 

@@ -73,7 +73,11 @@ Plack::App::MicroTemplate -
 
 =head1 SYNOPSIS
 
-  use Plack::App::MicroTemplate;
+    use Plack::App::MicroTemplate;
+
+    Plack::App::MicroTemplate->new(
+        include_path => ['.'],
+    );
 
 =head1 DESCRIPTION
 
